@@ -3,96 +3,118 @@
 
 
 body{
-    height: 10000px;
-    width: 100%;
-    font-family: 'Lora', serif;
-    background-color: #cfb9a3;
-    background-color: #afbfce;
-    background-color: #506270;
-    background-color: #ede5dd;
+    /* height: 10000px; */
     margin: 0;
-    /* color: #506270; */
+    padding: 0;
 }
 ::-webkit-scrollbar {
     width: 0;
   }
-
-
-.navbar {   
-    list-style-type: none;
-    margin: 0 20px;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-    border-bottom: solid #ccc4bd 1px;
-    border: solid red 0.01px;
-}
-
-.navbar-el { 
-    float: left;
-}
-.logo {
-    top: 0;
-    right: 20px;
-    font-size: 50px;
-    position: absolute;
-    font-family: 'Pecita', sans-serif;
-}
-.logo:hover {
-    cursor: pointer;
-}
-.navbar-el-desc {
-    font-weight: 600;
-    font-size: 30px;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-.navbar-el-but{
-}
-.navbar-el-but:hover {
-    cursor: pointer;
-    background-color: #fff4e8;
-}
-
-.new-event {
-    display: flex;
-    flex-direction: row;
-    margin: 0 20px;
-    height: 500px;
-    border: solid red 1px;
-}
 
 .centrilize {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.new-event-photo {
-    height: 100%;
-    width: 50%;
-    border: solid red 1px;
+
+
+/* Начало интроблок */
+  /* Начало интроблок */
+  /* Начало интроблок */
+.intro-block {
+    position: relative;
+    width: 100%;
+    height: 100vh;
 }
-.new-event-photo img {
-    height: 250px;
-    border: solid red 1px;
+.navbar-block {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    min-width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.new-event-desc {
-    height: 100%;
-    width: 50%;
-    border: solid green 1px;
+.logo {
+    text-decoration: none; 
+    margin-left: 20px;
+    font-size: 40px;
+    font-family: 'Pecita', sans-serif;
+    font-weight: 600;
+    color: white;
 }
-.new-event-desc p {
-    padding: 40px;
+
+.navbar{
+    list-style: none;
+    display: flex;
+}
+.navbar li{
+    text-decoration: none;
+    padding: 0px 20px;
+}
+.navbar li a {
+    color: white;
+    text-decoration: none; 
+    font-size: 25px;
+}
+.icon-cont{
+    color: white;
+    font-size: 30px;
+    margin-right: 20px; 
+}
+
+@media screen and (max-width: 450px) {
+    .navbar {
+        display: none;
+    }
+    .navbar-block {
+        justify-content: center;
+    }
+  }
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+.intro-content {
     text-align: center;
 }
+.intro-content h1 {
+    color: white;
+    font-family: 'Pecita', sans-serif;
+    font-size: 120px;
+    font-weight: 600;
+}
+.intro-content a {
+    color: white;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 24px;
+     border: 2px solid white;
+     padding: 14px 70px;
+     border-radius: 50px;
+     margin-top: 20px;
+}
+
+/* Конец интроблок */
+  /* Конец интроблок */
+  /* Конец интроблок */
 
 
 
+
+  /* Начало шортблок */
+  /* Начало шортблок */
+  /* Начало шортблок */
 .short-about {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: column;  */
+    flex-wrap: wrap;
     margin: 0 20px;
     height: 250px;
     border: solid blue 1px
@@ -103,15 +125,28 @@ body{
     height: 100%;
     flex-direction: column;
     text-align: center;
-    border: solid red 1px;
+    /* border: solid red 1px; */
 }
+@media screen and (max-width: 450px) {
+    .short-about-block {
+        width: 50%;
+        height: 50%;
+    }
+  }
 .short-about-block p {
     padding: 0 10px;
 }
+/* Конец шортблок */
+/* Конец шортблок */
+/* Конец шортблок */
 
+
+/* Начало правила */
+/* Начало правила */
+/* Начало правила */
 .about {
     margin: 0 20px;
-    height: 500px;
+    height: 300px;
     border: solid red 1px;
     display: flex;
     flex-direction: row;
@@ -132,12 +167,33 @@ body{
     border: solid red 1px;
 }
 .about-photo img {
-    width: 250px;
+    height: 50%;
+    width: 50%;
     border: solid
      red 1px;
 }
+@media screen and (max-width: 450px) {
+    .about {
+        flex-direction: column;
+    }
+    .about-desc {
+        width: 100%;
+        height: 50%;
+    }
+    .about-photo {
+        width: 100%;
+        height: 50%;
+    }
+  }
+/* конец правила */
+/* конец правила */
+/* конец правила */
 
 
+
+/* Начало Расписание */
+/* Начало Расписание */
+/* Начало Расписание */
 .timetable {    
     margin: 0 20px;
     /* height: 500px; */
@@ -156,6 +212,15 @@ body{
     margin: 20px;
     border: solid red 1px;
 }
+@media screen and (max-width: 450px) {
+    .game {
+        width: 200px;
+        height: 200px;
+    }
+  }
+/* Конец Расписание */
+/* Конец Расписание */
+/* Конец Расписание */
 
 
 .rules {
@@ -164,5 +229,10 @@ body{
     border: solid red 1px;
 }
 .rules-desc p {
-    padding: 0 80px;
+    padding: 20px 200px;
 }
+@media screen and (max-width: 450px) {
+    .rules-desc p {
+        padding: 5px 40px;
+    }
+  }

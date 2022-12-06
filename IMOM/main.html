@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="intro-block centrilize">
-          <video src="sample.mp4" class="back-video" autoplay loop muted playsinline webkit-playinginline></video>
+          <video src="back-video.mp4" class="back-video" autoplay muted loop></video>
             <div class="navbar-block">
                 <nav>
                     <ul class="navbar">
@@ -21,7 +21,7 @@
                             <a href="#">О нас</a>
                         </li>
                         <li>
-                            <a href="#">Что то еще1</a>
+                            <a href="#">Что то еще</a>
                         </li>
                     </ul>
                 </nav>
@@ -73,7 +73,22 @@
             <div class="timetable-events centrilize">
 
                 <div class="game centrilize">
-                    12 декабря
+                    <div class="start-reg">
+                        <a>Вызвать окно</a>
+                    </div>
+                    <div class="popup">
+                        <div class="popup-container">
+                            <div class="popup-body">
+                                <p>Зарегестрироватсья на игру</p>
+                                <form class="reg-form">
+                                    <input type="text" name="name" placeholder="Имя"><br>
+                                    <input type="text" name="surname" placeholder="Фамилия"><br>
+                                    <button>отправить</button>
+                                </form>
+                                <div class="popup-close">&#10006</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="game centrilize">
                     13 декабря
@@ -82,7 +97,7 @@
                     14 декабря
                 </div>
                 <div class="game centrilize">
-                    15 декабря
+                    15 декабря2
                 </div>
                 <div class="game centrilize">
                     16 декабря
@@ -100,6 +115,6 @@
 
         </div>
 
-
+        <script src="script.js"></script>
     </body>
 </html>

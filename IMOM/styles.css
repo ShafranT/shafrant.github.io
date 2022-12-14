@@ -5,12 +5,21 @@
     box-sizing: border-box;
 }
 ::-webkit-scrollbar {
-    width: 0;
-  }
+    background-color: transparent;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: lightgrey;
+    border-radius: 10px;
+    
+}
 body {
+    overflow: overlay;
     height: 10000px;
 }
-
+body.lock {
+    overflow: hidden;
+}
 
 /*  */
 .navbar {
@@ -104,7 +113,7 @@ body {
     text-decoration: none;
     display: inline-block;
     background-color: rgba(255, 255, 255, 0);
-    border: solid 1px white;
+    border: solid 2px white;
     border-radius: 3vw;
     color: white;
     cursor: pointer;
